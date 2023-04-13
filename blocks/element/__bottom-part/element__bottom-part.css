@@ -1,0 +1,8 @@
+.element__bottom-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 246px;
+    margin: 0 auto;
+    padding: 25px 0 31px 0;
+}

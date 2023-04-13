@@ -1,0 +1,13 @@
+.profile__left-part {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1050px) {
+    .profile__left-part {
+        width: 100%;
+        flex-direction: column;
+        gap: 26px;
+        padding-bottom: 36px;
+    }
+}
