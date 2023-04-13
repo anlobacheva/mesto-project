@@ -7,10 +7,15 @@
     line-height: 48px;
     color: #FFFFFF;
     padding-right: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 294px;
 }
 
 @media screen and (max-width: 768px) {
     .profile__name {
+        max-width: 189px;
         padding-right: 0;
         font-size: 27px;
         line-height: 33px;
