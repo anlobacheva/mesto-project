@@ -31,6 +31,7 @@
             <section class="elements">
                 <article class="element">
                     <img src="images/karachaevsk.jpg" alt="Карачаевск" class="element__photo">
+                    <button class="element__delete-button" type="button" aria-label="Удалить"></button>
                     <div class="element__bottom-part">
                         <h2 class="element__caption">Карачаевск</h2>
                         <button class="element__like-button" type="button" aria-label="Лайк"></button>
@@ -38,6 +39,7 @@
                 </article>
                 <article class="element">
                     <img src="images/elbrus.png" alt="Гора Эльбрус" class="element__photo">
+                    <button class="element__delete-button" type="button" aria-label="Удалить"></button>
                     <div class="element__bottom-part">
                         <h2 class="element__caption">Гора Эльбрус</h2>
                         <button class="element__like-button" type="button" aria-label="Лайк"></button>
@@ -45,6 +47,7 @@
                 </article>
                 <article class="element">
                     <img src="images/dombay.jpg" alt="Домбай" class="element__photo">
+                    <button class="element__delete-button" type="button" aria-label="Удалить"></button>
                     <div class="element__bottom-part">
                         <h2 class="element__caption">Домбай</h2>
                         <button class="element__like-button" type="button" aria-label="Лайк"></button>
@@ -52,6 +55,7 @@
                 </article>
                 <article class="element">
                     <img src="images/elbrus.png" alt="Гора Эльбрус" class="element__photo">
+                    <button class="element__delete-button" type="button" aria-label="Удалить"></button>
                     <div class="element__bottom-part">
                         <h2 class="element__caption">Гора Эльбрус</h2>
                         <button class="element__like-button" type="button" aria-label="Лайк"></button>
@@ -59,6 +63,7 @@
                 </article>
                 <article class="element">
                     <img src="images/dombay.jpg" alt="Домбай" class="element__photo">
+                    <button class="element__delete-button" type="button" aria-label="Удалить"></button>
                     <div class="element__bottom-part">
                         <h2 class="element__caption">Домбай</h2>
                         <button class="element__like-button" type="button" aria-label="Лайк"></button>
@@ -66,6 +71,7 @@
                 </article>
                 <article class="element">
                     <img src="images/karachaevsk.jpg" alt="Карачаево-Черкесия" class="element__photo">
+                    <button class="element__delete-button" type="button" aria-label="Удалить"></button>
                     <div class="element__bottom-part">
                         <h2 class="element__caption">Карачаево-Черкесия</h2>
                         <button class="element__like-button" type="button" aria-label="Лайк"></button>
@@ -76,17 +82,46 @@
         <footer class="footer">
             <p class="footer__sign">&copy; 2020 Mesto Russia</p>
         </footer>
-        <section class="popup popup_opened">
+        <section class="popup">
             <div class="popup__container">
                 <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
                 <h2 class="popup__header">Редактировать профиль</h2>
-                <form class="popup__input-container" name="form">
+                <form class="popup__input-container" name="form_edit">
                     <input type="text" class="popup__field" name="firstname" placeholder="Имя" value="Жак-Ив Кусто">
                     <input type="text" class="popup__field" name="about" placeholder="О себе" value="Исследователь океана">
                     <button type="submit" class="popup__save-button">Сохранить</button>
                 </form>
             </div>
         </section>
+        <section class="popup">
+            <div class="popup__container">
+                <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+                <h2 class="popup__header">Новое место</h2>
+                <form class="popup__input-container" name="form_add">
+                    <input type="text" class="popup__field" name="picture_title" placeholder="Название">
+                    <input type="text" class="popup__field" name="picture_link" placeholder="Ссылка на картинку">
+                    <button type="submit" class="popup__save-button">Создать</button>
+                </form>
+            </div>
+        </section>
+        <section class="popup popup__image-section">
+            <div class="popup__image-container">
+                <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+                <img src="#" alt="#" class="popup__photo">
+                <h2 class="popup__caption"></h2>
+            </div>
+        </section>
+        <template id="card_template">
+            <article class="element">
+                <img src="img" alt="name" class="element__photo">
+                <button class="element__delete-button" type="button" aria-label="Удалить"></button>
+                <div class="element__bottom-part">
+                    <h2 class="element__caption"></h2>
+                    <button class="element__like-button" type="button" aria-label="Лайк"></button>
+                </div>
+            </article>
+        </template>
     </div>
+    <script defer src="script.js"></script> 
 </body>
 </html>

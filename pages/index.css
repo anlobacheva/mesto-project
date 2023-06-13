@@ -9,6 +9,7 @@
 @import url(../blocks/element/element.css);
 @import url(../blocks/element/__caption/element__caption.css);
 @import url(../blocks/element/__like-button/element__like-button.css);
+@import url(../blocks/element/__delete-button/element__delete-button.css);
 @import url(../blocks/element/__like-button/_active/element__like-button_active.css);
 @import url(../blocks/element/__photo/element__photo.css);
 @import url(../blocks/element/__bottom-part/element__bottom-part.css);
@@ -31,5 +32,9 @@
 @import url(../blocks/popup/__field/popup__field.css);
 @import url(../blocks/popup/__save-button/popup__save-button.css);
 @import url(../blocks/popup/__close-button/popup__close-button.css);
+@import url(../blocks/popup/__caption/popup__caption.css);
+@import url(../blocks/popup/__photo/popup__photo.css);
+@import url(../blocks/popup/__image-section/popup__image-section.css);
+@import url(../blocks/popup/__image-container/popup__image-container.css);
 
 /* * { outline: 1px solid yellow; } */
